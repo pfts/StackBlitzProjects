@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: center;">
+      Contato
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <style>
+    ion-content{
+      background: linear-gradient(0deg, yellow, green);
+    }
+    #logo-whatsapp{
+      color: green;
+    }
+  </style>
+  <ion-list>
+    <ion-list-header>Me siga no Instagram!</ion-list-header>
+    <ion-item>
+      
+      <ion-icon id="logo-whatsapp" name="logo-whatsapp" item-right></ion-icon>
+      @pfts
+      <script>
+        let logo = document.querySelector('logo-whatsapp');
+        logo.addEventListener('click', zap)
+        function zap(){
+          logo.style.background = 'black'
+        }
+      </script>
+    </ion-item>
+  </ion-list>
+</ion-content>
